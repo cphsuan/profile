@@ -1,5 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes } from "react-router-dom";
 import Navbars from "./components/navbars";
+import routes from "./pages/routes";
 import "./App.css";
 
 function App() {
@@ -7,9 +8,7 @@ function App() {
     <>
       <Router>
         <Navbars />
-        <Routes>
-          <Route path="/" exact />
-        </Routes>
+        <Routes>{routes}</Routes>
       </Router>
     </>
   );
